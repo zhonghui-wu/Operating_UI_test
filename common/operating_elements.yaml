@@ -1,0 +1,150 @@
+OperatingLoginPage: # 运营端登录页元素
+  tenant_code: ['css selector', 'div:nth-child(1) > div > div > input'] # 租户id
+  username: ['css selector', 'div:nth-child(2) > div > div > input'] # 用户账号
+  pwd: ['css selector', 'div:nth-child(3) > div > div > input'] # 用户密码
+  code: ['css selector', 'div:nth-child(4) > div > div > input']  # 图形验证码输入框
+  code_img: ['css selector', 'div.el-form-item__content>img'] # 图形验证码
+  login_button: ['css selector', 'div > button'] # 登录按钮
+
+OperatingHomePage: # 运营端首页
+  user_img: ['css selector', 'div.avatar > img'] # 用户头像
+  user_name: ['css selector', 'div.company-name'] # 用户名称
+  userinfo_update: ['css selector', 'div.footer > button.el-button.el-button--default'] # 用户信息修改
+  logout_button: ['css selector', 'div.footer > button.el-button.el-button--primary'] # 用户退出登录
+  logout_confirm: ['css selector', 'div.el-message-box__btns >button.el-button--primary>span'] # 确认退出登录
+  user_manage: [ 'css selector', ' div > ul > div > li:nth-child(1) > div > span' ]  # 用户管理列表下拉框
+  userinfo: [ 'css selector', 'li.el-submenu.is-opened > ul > div:nth-child(1) > li > div > span' ]  # 用户信息列表下拉框
+  # 注册用户页
+  register_user_page: [ 'css selector', 'li.el-submenu.is-opened > ul > div:nth-child(1) > li > ul > li:nth-child(1) > span' ]
+  # 短信用户页
+  text_message_user_page: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(1) > li > ul > li:nth-child(2) > span']
+  # 微信用户页
+  WX_user_page: ['css selector', 'div:nth-child(1) > li > ul > li.el-menu-item.is-active > span']
+  # 农行用户页
+  ABC_user_page: [ 'css selector', 'li.el-submenu.is-opened > ul > div:nth-child(1) > li > ul > li:nth-child(4) > span']
+  # 云闪付用户页
+  UnionPay_user_page: [ 'css selector', 'li.el-submenu.is-opened > ul > div:nth-child(1) > li > ul > li:nth-child(6) > span' ]
+  # 收货地址页
+  address_page: [ 'css selector', 'div > ul > div > li.el-submenu.is-opened > ul > li:nth-child(2) > span']
+  # 授权信息列表下拉框
+  authorization_info: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(3) > li > div > span']
+  # 登录授权页
+  login_authorization: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(3) > li > ul > li:nth-child(1) > span']
+  # 活动授权
+  activity_authorization: ['css selector', ' li.el-submenu.is-opened > ul > div:nth-child(3) > li > ul > li:nth-child(2) > span']
+  # 用户订单列表下拉框
+  user_order: ['css selector', '.el-submenu.is-opened > ul > div:nth-child(4) > li > div > span']
+  # 直充权益订单
+  user_fill_continuously_order: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(4) > li > ul > li:nth-child(1) > span']
+  # 优惠券订单
+  coupon_order: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(4) > li > ul > li:nth-child(2) > span']
+  # 用户优惠券列表
+  user_coupon: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(5) > li > div > span']
+  # 优惠券领取记录
+  coupon_collection_record: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(5) > li > ul > li:nth-child(1) > span']
+  # 优惠券使用记录
+  coupon_use_record: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(5) > li > ul > li:nth-child(2) > span']
+  # 用户车辆
+  user_car: ['css selector', 'li.el-submenu.is-opened > ul > li:nth-child(6) > span']
+  # 产品管理
+  product_manage: ['css selector', ' li:nth-child(2) > div > span']
+  # 产品商城
+  product_store: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(1) > li > div > span']
+  # 直充权益产品
+  user_fill_continuously_product: ['css selector', ' li.el-menu-item.is-active > span']
+  # 优惠券产品
+  coupon_product: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(1) > li > ul > li:nth-child(2) > span']
+  # 产品订单
+  product_order: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(2) > li > div > span']
+  # 直充权益产品订单
+  user_fill_continuously_product_order: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(2) > li > ul > li:nth-child(1) > span']
+  # 优惠券产品订单
+  coupon_product_order: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(2) > li > ul > li:nth-child(2) > span']
+  # 产品仓库
+  product_stash: ['css selector', ' li.el-submenu.is-opened > ul > div:nth-child(3) > li > div > span']
+  # 直充权益产品仓库
+  user_fill_continuously_product_stash: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(3) > li > ul > li:nth-child(1) > span']
+  # 优惠券产品库存
+  coupon_product_stash: ['css selector', 'li.el-submenu.is-opened > ul > div:nth-child(3) > li > ul > li:nth-child(2) > span']
+  # 券码仓库
+  coupon_code_stash: ['css selector', ' li.el-submenu.is-opened > ul > div:nth-child(4) > li > div > span']
+  # 券码批次管理
+  coupon_code_batch_manage: ['css selector', ' li.el-submenu.is-opened > ul > div:nth-child(4) > li > ul > li:nth-child(1) > span']
+  # 券码管理
+  coupon_code_manage: ['css selector', ' li.el-submenu.is-opened > ul > div:nth-child(4) > li > ul > li:nth-child(2) > span']
+  # 券码领取及使用记录
+  coupon_code_collect_and_use_records: ['css selector', ' li.el-submenu.is-opened > ul > div:nth-child(4) > li > ul > li:nth-child(3) > span']
+
+OperatingUserInfoEle: # 右上角的用户信息页
+  user_name: ['css selector', ' div.content > div.p2'] # 用户名称
+  user_birthday: ['css selector', 'div.info-list > div:nth-child(1)'] # 用户生日
+  user_phone: ['css selector', 'div.info-list > div:nth-child(2)'] # 用户手机号
+  user_email: ['css selector', 'div.info-list > div:nth-child(3)'] # 用户邮箱
+  userinfo_update: ['css selector', 'div.footer > button.el-button.el-button--default'] # 用户信息修改
+  logout_button: ['css selector', 'div.footer > button.el-button.el-button--primary'] # 用户退出登录
+
+OperatingUserinfoUpdatePage: # 运营端用户信息修改页
+  user_nickname: ['xpath', '//*[@id="myForm_name"]/div[2]/div/input']  # 用户昵称
+  user_realname: ['xpath', '//*[@id="myForm_realName"]/div[2]/div[1]/input']  # 用户真实姓名
+  user_sex_boy: ['xpath', '//*[@id="myForm_sex"]/div[2]/div/label[1]/span[1]/span']  # 性别--男
+  user_sex_girl: ['xpath', '//*[@id="myForm_sex"]/div[2]/div/label[2]/span[1]/span']  # 性别--女
+  user_birthday: ['xpath', '//*[@id="myForm_birthday"]/div[2]/div/input'] # 用户生日
+  user_phone: [ 'xpath', '//*[@id="myForm_phone"]/div[2]/div/input' ] # 用户手机号
+  user_email: [ 'xpath', '//*[@id="myForm_email"]/div[2]/div/input' ] # 用户邮箱
+  change_password_table: ['css selector', '#tab-password'] # 修改密码
+  uld_pwd: ['xpath', '//*[@id="myForm_oldPwd"]/div[2]/div/input'] # 旧密码
+  new_pwd: ['xpath', '//*[@id="myForm_newPwd"]/div[2]/div/input'] # 新密码
+  repeat_new_pwd: ['xpath', '//*[@id="myForm_repeatNewPwd"]/div[2]/div/input'] # 确认新密码
+  cancel: ['css selector', 'div.custom-drawer-footer>button:nth-child(1)'] # 取消修改
+  confirm: ['css selector', 'div.custom-drawer-footer>button:nth-child(2)'] # 确认修改
+
+OperatingRegisterUserPage: # 用户管理 ==> 用户信息 ==> 注册用户页
+  page_first_msg: ['css selector', 'tbody > tr:nth-child(1)'] # 页面第一条数据
+
+OperatingTextMessageUserPage: # 用户管理 ==> 用户信息 ==> 短信用户页
+  page_first_msg: ['css selector', 'tbody > tr:nth-child(1)'] # 页面第一条数据
+
+OperatingWXUserPage: # 用户管理 ==> 用户信息 ==> 微信用户页
+  page_first_msg: ['css selector', 'tbody > tr:nth-child(1)'] # 页面第一条数据
+
+OperatingABCUserPage: # 用户管理 ==> 用户信息 ==> 农行用户页
+  page_first_msg: ['css selector', 'tbody > tr:nth-child(1)'] # 页面第一条数据
+
+OperatingUnionPayUserPage: # 用户管理 ==> 用户信息 ==> 云闪付用户页
+  page_first_msg: ['css selector', 'tbody > tr:nth-child(1)'] # 页面第一条数据
+
+OperatingAddressPage: # 用户管理 ==> 收货地址
+  # 页面第一条数据
+  page_first_msg: ['css selector', '#avue-view > div > div.table-wrap > div.table-content > div > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)']
+
+OperatingLoginAuthorizationPage: # 用户管理 ==> 授权信息 ==> 登录授权页
+  # 页面第一条数据
+  page_first_msg: ['css selector', '#avue-view > div > div.table-wrap > div.table-content > div > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)']
+
+OperatingActivityAuthorizationPage: # 用户管理 ==> 授权信息 ==> 活动授权页
+  # 页面第一条数据
+  page_first_msg: ['css selector', 'div.el-table__body-wrapper.is-scrolling-none > table > tbody > tr:nth-child(1)']
+
+OperatingUserFillContinuouslyOrderPage: # 用户管理 ==> 用户订单 ==> 直充权益订单
+  # 页面第一条数据
+  page_first_msg: ['css selector', 'div.el-table__fixed > div.el-table__fixed-body-wrapper > table > tbody > tr:nth-child(1)']
+
+OperatingCouponOrderPage: # 用户管理 ==> 用户订单 ==> 优惠券订单
+  # 页面第一条数据
+  page_first_msg: ['css selector', '#avue-view > div > div.table-wrap > div.table-content > div > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)']
+
+OperatingCouponCollectionRecordPage: # 用户管理 ==> 用户优惠券 ==> 优惠券领取记录
+  # 页面第一条数据
+  page_first_msg: ['css selector', '#avue-view > div > div.table-wrap > div.table-content > div > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)']
+
+OperatingCouponUserRecordPage: # 用户管理 ==> 用户优惠券 ==> 优惠券使用记录
+  # 页面第一条数据
+  page_first_msg: ['css selector', '#avue-view > div > div.table-wrap > div.table-content > div > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)']
+
+OperatingUserCarPage: # 用户管理 ==> 用户车辆页
+  # 页面第一条数据
+  page_first_msg: ['css selector', '#avue-view > div > div.table-wrap > div.table-content > div > div.el-table__body-wrapper.is-scrolling-left > table > tbody > tr:nth-child(1)']
+
+OperatingUserFillContinuouslyProductPage: # 产品管理 ==> 产品商城 ==> 直充权益产品
+  page_first_msg: ['css selector', 'div.card-content > div:nth-child(1)']
+
